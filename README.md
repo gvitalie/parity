@@ -17,18 +17,18 @@ me@amadeus:~$ python3 -q
 ... 
 >>> check(0)
 (0, 'undefined')
->>> check(-10)
-(-10, 'even')
 >>> check(10)
 (10, 'even')
+>>> check(-10)
+(-10, 'even')
 >>> check(11)
 (11, 'odd')
 >>> check(-11)
 (-11, 'odd')
->>> check(-11.5)
-The number is not an integer value
 >>> check(10.5)
-The number is not an integer value
+The number 10.5 is not an integer value
+>>> check(-11.5)
+The number -11.5 is not an integer value
 >>> check(-0)
 (0, 'undefined')
 >>> 
