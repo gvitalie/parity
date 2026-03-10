@@ -1,4 +1,4 @@
-def parity(n):
+def check(n):
   if not isinstance(n, int):
     print("The number is not an integer value")
     return
