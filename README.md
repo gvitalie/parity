@@ -5,7 +5,7 @@ The number is an odd or an even integer?
 me@amadeus:~$ python3 -q
 >>> def check(n):
 ...  if not isinstance(n, int):
-...    print("The number is not an integer value")
+...    print(f"The number {n} is not an integer value")
 ...    return
 ...  if n:
 ...    if n % 2 == 0:
