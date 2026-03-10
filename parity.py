@@ -1,6 +1,6 @@
 def check(n):
   if not isinstance(n, int):
-    print(f"The number {n} is not an integer value")
+    print(f"The value {n} is not an integer value")
     return
   if n:
     if n % 2 == 0:
