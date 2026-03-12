@@ -2,7 +2,7 @@ def check(n):
     match n:
         case _ if not isinstance(n, int):
             print(f"The value {n} is not an integer value")
-            return
+            return None
         case 0:
             return (n, 'undefined')
         case n if n % 2 == 1:  
