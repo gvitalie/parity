@@ -1,4 +1,14 @@
 def check(n):
+    if not isinstance(n, int):
+        print(f"The value {n} is not an integer value")
+        return None
+    if n:
+        if n % 2 == 1:
+            return (n, 'odd')
+        return (n, 'even')
+    return (n, 'undefined')
+
+def check_(n):
     match n:
         case _ if not isinstance(n, int):
             print(f"The value {n} is not an integer value")
@@ -9,4 +19,3 @@ def check(n):
             return (n, 'odd')
         case _:  
             return (n, 'even')
-            
