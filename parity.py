@@ -14,7 +14,7 @@ def check_(n):
             return None
         case 0:
             return (n, 'undefined')
-        case n if n & 1:  
+        case _ if n & 1:  
             return (n, 'odd')
         case _:  
             return (n, 'even')
