@@ -4,16 +4,14 @@ The number is an odd or an even integer?
 ```Python
 me@amadeus:~$ python3 -q
 >>> def check(n):
-...  if not isinstance(n, int):
-...    print(f"The value {n} is not an integer value")
-...    return
-...  if n:
-...    if n % 2 == 0:
-...      return (n, 'even')
-...    else:
-...      return (n, 'odd')
-...  else:
-...    return (n, 'undefined')
+...     if not isinstance(n, int):
+...             print(f"The value {n} is not an integer value")
+...             return None
+...     if n:
+...             if n % 2 == 1:
+...                     return (n, 'odd')
+...             return (n, 'even')
+...     return (n, 'undefined')
 ... 
 >>> check(0)
 (0, 'undefined')
