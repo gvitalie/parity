@@ -2,11 +2,10 @@ def check(n):
     if not isinstance(n, int):
         print(f"The value {n} is not an integer value")
         return None
-    if n:
-        if n % 2 == 1:
-            return (n, 'odd')
-        return (n, 'even')
-    return (n, 'undefined')
+    if not n: return (n, 'undefined')
+    if n & 1: return (n, 'odd')
+    return (n, 'even')
+
 
 def check_(n):
     match n:
