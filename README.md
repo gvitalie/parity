@@ -39,7 +39,7 @@ me@amadeus:~$ python3 -q
 ...             return None
 ...         case 0:
 ...             return (n, 'undefined')
-...         case n if n % 2 == 1:
+...         case n if n & 1:
 ...             return (n, 'odd')
 ...         case _:
 ...             return (n, 'even')
